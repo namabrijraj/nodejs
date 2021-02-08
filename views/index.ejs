@@ -1,0 +1,8 @@
+<%	if(players.length>0) { %>
+<table>
+	<tr><td>Id</td><td>First Name</td></tr>
+	<%	players.forEach((player,index) => { %>
+		<tr><td><%= player.id %></td><td><%= player.first_name %></td></tr>
+	<% }) %>	
+</table>
+<% } %>
